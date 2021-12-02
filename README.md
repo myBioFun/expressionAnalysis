@@ -12,6 +12,8 @@ python 02.hisat.run.py DIR(clean data) >02.hisat.run.sh
 sh 02.hisat.run.sh
 
 mkdir hisatResult
+
+
 mv *.bam *.gtf hisatResult
 
 3. merge the gtf from hisat2
