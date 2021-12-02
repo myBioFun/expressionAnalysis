@@ -29,7 +29,7 @@ sh 04.stringtie.run.sh
 
 5. run prepDE.py
 
-ls ballgown/*/*.gtf >gtf.list
+ls ballgown/ */ *.gtf >gtf.list
 
 
 awk -F '/'  '{print $2"\t"$0}' gtf.list >gtf.list1
@@ -37,4 +37,4 @@ awk -F '/'  '{print $2"\t"$0}' gtf.list >gtf.list1
 
 mv gtf.list1 gtf.list
  
-python prepDE.py -i gtf.list -l readlength
+python 05.prepDE.py -i gtf.list -l readlength
